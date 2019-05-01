@@ -1,0 +1,36 @@
+{
+  "name": "ksiegarnia",
+  "version": "1.0.0",
+  "description": "Project for school",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swiatekmateusz/ksiegarnia.git"
+  },
+  "author": "Mateusz Swiatek",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-error": "^1.0.5",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-terser": "^1.1.7",
+    "gulp-wait": "0.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/swiatekmateusz/ksiegarnia/issues"
+  },
+  "homepage": "https://github.com/swiatekmateusz/ksiegarnia#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
