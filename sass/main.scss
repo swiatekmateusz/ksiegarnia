@@ -1,5 +1,8 @@
 // Bootstrap
 @import "bootstrap/bootstrap.scss";
 
+//Variables
+@import 'modules/variables.scss';
+
 //My own styles
-@import "modules/nav.scss"
+@import "modules/nav.scss";
