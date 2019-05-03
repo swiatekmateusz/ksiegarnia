@@ -1,0 +1,15 @@
+section.bst{
+  background-color: #FF6659;
+  .bestsellery{
+    h2{
+      color: white;
+      font-size: 3.5rem;
+      padding: 2rem;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+      }
+    }
+  }
+}
