@@ -10,8 +10,14 @@
         color: #ddd;
       }
     }
+    div:nth-child(1){
+      border-right: 2px solid white;
+    }
   }
   .lvl-2{
+    @include media-breakpoint-down(sm){
+      margin-bottom: .4rem;
+    }
     padding: 0.5rem 0;
     .text-logo{
       margin: 0;
@@ -78,7 +84,6 @@
     &>button{
       outline: none;
       margin: 0 auto;
-      margin-bottom: .5rem;
       padding: 0;
       .fa-bars{
         font-size: 3rem;
@@ -98,6 +103,7 @@
       li{
         padding: .3rem;
         border-left: 2px solid white;
+        transition: .1s all linear;
         &:last-child{
           border-right: 2px solid white;
         }
