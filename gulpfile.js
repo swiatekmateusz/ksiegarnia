@@ -42,10 +42,11 @@ function startServer(callback) {
 //build minified js
 function minifyJavaScript(){
     return gulp.src([
-        './js/index.js',
         './js/lib/jquery.min.js',
         './js/lib/bootstrap.bundle.min.js',
-      ])
+        './js/lib/slick.min.js',
+        './js/sliders.js',
+        ])
         .pipe(concat('app.js'))
         .pipe(terser())
         .pipe(gulp.dest('./'));
