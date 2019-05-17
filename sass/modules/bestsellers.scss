@@ -3,8 +3,9 @@ section.bst{
   .bestsellery{
     padding-bottom: 3rem;
     h2{
+      font-family: 'Courgette', cursive;
       color: white;
-      font-size: 5.5rem;
+      font-size: 4rem;
       @include media-breakpoint-down(xs){
         font-size: 3.5rem;
       }
@@ -13,7 +14,7 @@ section.bst{
       &::after{
         content: '\2605';
         position: absolute;
-        top:70%;
+        top:60%;
         left:50%;
         font-size: 2.5rem;
         transform: translateX(-50%);
@@ -28,26 +29,26 @@ section.bst{
 
   }
   .first-place{
+    background: lightsalmon;
     .img{
-      &::before{
-        content: '1';
-      }
+      background: transparent;
+      padding: .5rem;
+      overflow: visible;
     }
   }
-  .second-place{
-    margin-top: 3rem;
+  .second-place,.third-place{
+    align-self: center;
     .img{
-      &::before{
-        content: '2';
-      }
+      max-width: 200px;
+      padding: 1.1rem .85rem;
     }
-  }
-  .third-place{
-    margin-top: 5rem;
-    .img{
-      &::before{
-        content: '3';
-      }
+    .title{
+      margin: 1rem 3rem .5rem;
+      padding: 0.5rem 0;
+    }
+    .price{
+      margin: 0 3rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -82,21 +83,7 @@ section.bst{
       max-width: 256px;
       transition: .15s all linear;
     }
-    &::before{
-      position: absolute;
-      top: 45%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      font-size: 20rem;
-      display: block;
-      color: white;
-      transition: .3s all linear;
-      opacity: 1;
-    }
     &:hover{
-      &::before{
-        opacity: 0;
-      }
       img{
         transform: scale(1.1);
       }
@@ -107,7 +94,7 @@ section.bst{
     padding: 1rem 0;
     background-color: $secondary-color;
     h5{
-      font-size: .8rem;
+      font-size: 1rem;
       opacity: .8;
       margin-top: .6rem;
     }
