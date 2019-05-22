@@ -1,4 +1,4 @@
-section.bst{
+.bst{
   background-color: #FF6659;
   .bestsellery{
     padding-bottom: 3rem;
@@ -85,6 +85,7 @@ section.bst{
     }
     &:hover{
       img{
+        cursor: pointer;
         transform: scale(1.1);
       }
     }

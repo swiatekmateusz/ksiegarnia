@@ -1,0 +1,81 @@
+.new{
+  padding-bottom: 5rem;
+  h2{
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+    @include media-breakpoint-down(xs){
+      font-size: 3.5rem;
+    }
+    padding: 3rem 2rem 5rem 2rem;
+    position: relative;
+    &::after{
+      content: '\2666';
+      position: absolute;
+      top:60%;
+      left:50%;
+      font-size: 2.5rem;
+      transform: translateX(-50%);
+      text-shadow: -70px 0 0  black, 70px 0 0 black;
+    }
+  }
+  .row>div{
+    flex-direction: column;
+    border-left: black 1px solid;
+    &:first-child{
+      border-left: none;
+    }
+    @include media-breakpoint-down(md){
+      border-left: none;
+      border-bottom: black 1px solid;
+      margin-top: 1.5rem;
+    }
+    .img{
+      height: 250px;
+      @include media-breakpoint-down(md){
+        height: 425px;
+      }
+      @include media-breakpoint-down(sm){
+        height: 500px;
+      }
+      @include media-breakpoint-down(xs){
+        height: 90vw;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .price{
+      margin-top: 1.2rem;
+      color: red;
+      font-family: fantasy;
+      font-weight: 100;
+      @include media-breakpoint-down(md){
+        margin-top: .5rem;
+      }
+      @include media-breakpoint-down(sm){
+        h4{
+          font-size: 3rem ;
+        }
+      }
+    }
+    .toCart{
+      margin-top: 1rem;
+      @include media-breakpoint-down(md){
+        margin-top: .5rem;
+        margin-bottom: 1.5rem;
+      }
+      .button{
+        padding: .8rem;
+        background-color: red;
+        font-family: arial;
+        font-weight: 900;
+        color: white;
+        transition: .14s linear all;
+        &:hover{
+          cursor: pointer;
+          background-color: orange;
+        }
+      }
+    }
+  }
+}
