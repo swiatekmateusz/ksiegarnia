@@ -1,0 +1,86 @@
+.sale{
+  padding-bottom: 5rem;
+  h2{
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+    text-align: center;
+    @include media-breakpoint-down(xs){
+      font-size: 2.7rem;
+    }
+    padding: 3rem 2rem 5rem 2rem;
+    position: relative;
+    &::after{
+      content: '\2727';
+      position: absolute;
+      top:60%;
+      left:50%;
+      font-size: 2.5rem;
+      transform: translateX(-50%);
+      text-shadow: -70px 0 0  black, 70px 0 0 black;
+    }
+  }
+  .img{
+    padding: 1.5rem;
+    border: 2px $primary-color solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 100%;
+    }
+  }
+  .aside{
+    .title{
+      border-top: gold 2px solid;
+      border-bottom: gold 2px solid;
+      padding: 2rem 0;
+      margin: 1rem 0;
+      h5{
+        font-size: 2rem;
+        opacity: .7;
+      }
+      h4{
+        font-size: 2.5rem;
+      }
+    }
+    .price{
+      align-items: center;
+      flex-wrap: wrap;
+      span>del{
+        font-weight: bold;
+        font-size: 2rem;
+        padding: .8rem;
+      }
+      span+span{
+        font-weight: bold;
+        font-size: 3rem;
+        padding: .3rem;
+        color: $secondary-color
+      }
+      .toCart{
+        margin: 0 auto;
+        div{
+          background-color: $primary-color;
+          padding: .8rem 5rem;
+          color: white;
+          font-size: 1.3rem;
+          transition: .14s all linear;
+          font-weight: bold;
+          &:hover{
+            cursor: pointer;
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+    .description{
+      margin: 1rem 0;
+      border: 2px orange solid;
+      p{
+        font-size: 1.3rem;
+        padding: 1.4rem 1.2rem;
+        margin: 0;
+      }
+    }
+  }
+}
