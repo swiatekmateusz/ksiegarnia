@@ -1,0 +1,71 @@
+.popular{
+  padding-bottom: 6rem;
+  h2{
+    font-family: 'Courgette', cursive;
+    font-size: 4rem;
+    text-align: center;
+    @include media-breakpoint-down(xs){
+      font-size: 2.7rem;
+    }
+    padding: 3rem 2rem 5rem 2rem;
+    position: relative;
+    &::after{
+      content: '\2736';
+      position: absolute;
+      top:60%;
+      left:50%;
+      font-size: 2.5rem;
+      transform: translateX(-50%);
+      text-shadow: -70px 0 0  black, 70px 0 0 black;
+    }
+  }
+  .popular-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 1px solid #ddd;
+    
+    img{
+      padding: 0 0 1rem 0;
+    }
+    a{
+      transition: .1s all linear;
+      &:hover{
+        text-decoration: none;
+        color: black;
+        transform: scale(1.05);
+      }
+    }
+    h4{
+      color: black;
+    }
+    h5{
+      color: black;
+      opacity: .7;
+    }
+    div{
+      font-size: 1.1rem;
+      margin-top: 0rem;
+    }
+    .toCart{
+      font-size: 1.2rem;
+      margin: 1rem 0 0 0;
+      padding: .7rem 1.2rem;
+      border-radius: 1rem;
+      color: white;
+      background-color: $secondary-color;
+      transition: .1s all linear;
+      &:hover{
+        background-color: orange;
+        cursor: pointer;
+      }
+      i{
+        color: white;
+        padding-right: .5rem;
+      }
+    }
+  }
+}

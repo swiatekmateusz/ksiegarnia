@@ -1,0 +1,28 @@
+footer{
+  background-color: #ddd;
+  text-align: center;
+  a{
+    color: $primary-color;
+    &:hover{
+      color: $secondary-color;
+      text-decoration: none;
+    }
+  }
+  .copy{
+    width: 100%;
+    p{
+      margin: 0;
+      padding: 1rem;
+    }
+  }
+  .info{
+    padding: 8rem 0 5rem 0;
+    text-align: left;
+    p{
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      font-size: 1.2rem;
+    }
+  }
+}
