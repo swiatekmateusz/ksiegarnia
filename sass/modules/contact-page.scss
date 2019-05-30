@@ -2,15 +2,42 @@
   background-color: #eee;
   border: 1px solid #ddd;
   margin: 4rem auto 5rem auto;
-  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  h3{
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 2.7rem;
+  }
   .info{
-    h3{
-      text-align: center;
-      padding: 1.3rem 0;
-      font-size: 2.7rem;
-    }
-    border-bottom: 1px solid black;
     font-size: 1.3rem;
     padding: .5rem 1rem;
+  }
+  .form{
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    margin: 0 auto 4rem auto;
+    .inputs{
+      padding: 1rem;
+      input{
+        padding: .4rem;
+        &:last-child{
+          margin-left: .4rem;
+        }
+      }
+    }
+    .textarea{
+      padding: 0 1rem;
+      textarea{
+        padding: .4rem;
+      }
+    }
+    .button{
+      align-self: flex-start;
+      padding: .5rem 0 0 1rem ;
+    }
   }
 }
