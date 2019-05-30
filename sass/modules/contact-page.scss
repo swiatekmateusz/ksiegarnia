@@ -1,0 +1,16 @@
+.contact{
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin: 4rem auto 5rem auto;
+  height: 60vh;
+  .info{
+    h3{
+      text-align: center;
+      padding: 1.3rem 0;
+      font-size: 2.7rem;
+    }
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+  }
+}
